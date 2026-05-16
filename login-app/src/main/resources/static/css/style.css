@@ -1,0 +1,113 @@
+/* ── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+/* ── Layout ──────────────────────────────────────────────── */
+.page-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    padding: 2.5rem 2rem;
+    width: 100%;
+    max-width: 420px;
+}
+
+.dashboard-card { max-width: 540px; }
+
+/* ── Card Header ─────────────────────────────────────────── */
+.card-header { text-align: center; margin-bottom: 1.8rem; }
+.card-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0f3460;
+    margin-bottom: 0.3rem;
+}
+.card-header p { color: #6c757d; font-size: 0.95rem; }
+
+/* ── Form ────────────────────────────────────────────────── */
+.form-group { margin-bottom: 1.2rem; }
+.form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.4rem;
+}
+.form-group input {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1.5px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+}
+.form-group input:focus {
+    border-color: #0f3460;
+    box-shadow: 0 0 0 3px rgba(15, 52, 96, 0.15);
+}
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.2s, transform 0.1s;
+}
+.btn:active { transform: scale(0.98); }
+
+.btn-primary   { background: #0f3460; color: #fff; }
+.btn-primary:hover { background: #16213e; }
+
+.btn-danger    { background: #dc3545; color: #fff; }
+.btn-danger:hover { background: #c82333; }
+
+/* ── Alerts ──────────────────────────────────────────────── */
+.alert {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.alert-success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.alert-error   { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+.alert-info    { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+
+/* ── Footer link ─────────────────────────────────────────── */
+.footer-link {
+    text-align: center;
+    margin-top: 1.4rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+.footer-link a { color: #0f3460; text-decoration: none; font-weight: 600; }
+.footer-link a:hover { text-decoration: underline; }
+
+/* ── Dashboard extras ────────────────────────────────────── */
+.dashboard-body { margin: 1rem 0 1.5rem; }
+.dashboard-body p { margin-bottom: 0.6rem; color: #555; }
+.info { background: #f0f4ff; padding: 0.6rem 0.9rem; border-radius: 6px; }
+code { font-family: monospace; color: #0f3460; font-weight: 700; }

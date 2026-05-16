@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dashboard – MyApp</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="card dashboard-card">
+        <div class="card-header">
+            <h1>Dashboard</h1>
+            <p>Welcome, <strong th:text="${username}">User</strong>!</p>
+        </div>
+
+        <div class="dashboard-body">
+            <p>You have successfully logged in to the application.</p>
+            <p class="info">Logged in as: <code sec:authentication="name">username</code></p>
+        </div>
+
+        <form th:action="@{/logout}" method="post">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+            <button type="submit" class="btn btn-danger">Sign Out</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

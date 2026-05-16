@@ -1,0 +1,7 @@
+/home/ubuntu/3-tier-architecture/login-app/src/main/java/com/myapp/loginapp/LoginApplication.java
+/home/ubuntu/3-tier-architecture/login-app/src/main/java/com/myapp/loginapp/service/UserService.java
+/home/ubuntu/3-tier-architecture/login-app/src/main/java/com/myapp/loginapp/controller/AuthController.java
+/home/ubuntu/3-tier-architecture/login-app/src/main/java/com/myapp/loginapp/config/SecurityConfig.java
+/home/ubuntu/3-tier-architecture/login-app/src/main/java/com/myapp/loginapp/repository/UserRepository.java
+/home/ubuntu/3-tier-architecture/login-app/src/main/java/com/myapp/loginapp/service/CustomUserDetailsService.java
+/home/ubuntu/3-tier-architecture/login-app/src/main/java/com/myapp/loginapp/model/User.java

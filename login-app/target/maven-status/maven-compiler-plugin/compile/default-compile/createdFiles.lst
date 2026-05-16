@@ -1,0 +1,7 @@
+com/myapp/loginapp/model/User.class
+com/myapp/loginapp/LoginApplication.class
+com/myapp/loginapp/repository/UserRepository.class
+com/myapp/loginapp/service/UserService.class
+com/myapp/loginapp/controller/AuthController.class
+com/myapp/loginapp/service/CustomUserDetailsService.class
+com/myapp/loginapp/config/SecurityConfig.class
