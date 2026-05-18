@@ -1,3 +1,6 @@
+<img width="1380" height="752" alt="Gemini_Generated_Image_arsma6arsma6arsm" src="https://github.com/user-attachments/assets/4b6627e3-9471-4120-9498-bae0b10c9ca4" />
+
+
 # AWS Multi-VPC Application Architecture
 
 ## Overview
