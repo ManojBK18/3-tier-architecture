@@ -76,6 +76,4 @@ resource "aws_lb" "tfer--NLB-Frontend" {
   subnet_mapping {
     subnet_id = "subnet-06d95c7cb8bfbf7c8"
   }
-
-  subnets = ["subnet-06d95c7cb8bfbf7c8"]
 }
