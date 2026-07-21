@@ -20,10 +20,6 @@ resource "aws_instance" "tfer--i-017b8cb78cbab98cb_APP-Frontend2" {
   disable_api_termination = "false"
   ebs_optimized           = "true"
 
-  enclave_options {
-    enabled = "false"
-  }
-
   get_password_data                    = "false"
   hibernation                          = "false"
   instance_initiated_shutdown_behavior = "stop"
