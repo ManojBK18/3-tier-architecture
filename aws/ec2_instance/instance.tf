@@ -27,10 +27,6 @@ resource "aws_instance" "tfer--i-017b8cb78cbab98cb_APP-Frontend2" {
   ipv6_address_count                   = "0"
   key_name                             = "APP"
 
-  maintenance_options {
-    auto_recovery = "default"
-  }
-
   metadata_options {
     http_endpoint               = "enabled"
     http_protocol_ipv6          = "disabled"
